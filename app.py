@@ -10,8 +10,8 @@ st.set_page_config(layout="wide")
 # Define a function to load the data
 @st.cache_data
 def load_data():
-    zomato = pd.read_csv("C:/Users/Kiran/Downloads/zomato.csv", encoding='ISO-8859-1')
-    country = pd.read_excel("C:/Users/Kiran/Downloads/Country_Code.xlsx")
+    zomato = pd.read_csv("zomato.csv", encoding='ISO-8859-1')
+    country = pd.read_excel("Country_Code.xlsx")
     return zomato, country
 
 # Sidebar Navigation
